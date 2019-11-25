@@ -1,1 +1,64 @@
 // Navigation code here
+.flexRowNowrap{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.flexRowWrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+.funFont{
+    color: black;
+    font-family: 'Indie Flower', cursive;
+}
+.flexColWrap{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.external{
+    width: 100vw;
+    background: #F6F6F6;
+}
+.nav{
+    .flexRowWrap();
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto 0 auto;
+    padding: 15px 15px;
+    .logo{
+        padding: 0 0 2vh 0;
+        width: 100%;
+        text-align: center;
+    }
+    .logo h1{
+        font-size: 4rem;
+    }
+
+    .anchors{
+        .flexRowNowrap();
+        justify-content: center;
+        width: 60%;
+        // line-height: 1em;
+            a {
+            flex-grow: 1;
+            text-decoration: none;
+            font-size: 1.5em;
+            color: black;
+        }
+    }
+}
+// @media screen and (@mobile){
+//     .nav {
+//         // .flexColWrap();
+//         .logo{
+//             width:100%;
+//             text-align: center;;
+//         }
+//         .anchors{
+//             width: 100%;          
+//         }
+//     }
+// }
