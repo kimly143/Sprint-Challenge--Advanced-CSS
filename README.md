@@ -32,15 +32,22 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
-1. What is the difference between an adaptive website and a fully responsive website?
+1. what is the difference between an adaptive website and a fully responsive website? 
+- Adaptive layouts borrow from the speed of a fixed-layout but accommodate different devices at specific breakpoints in design. For example, an adaptive website may have hardcoded pixels used for layout using media queries for different devices.  - Responsive layouts combine features of fixed, adaptive, and fluid websites into one seamless experience. Media queries are used to constrain responsive units so that as the viewport expands or shrinks, you get an experience that looks and functions beautifully across thousands of devices and screen sizes.
 
 2. Describe what it means to be mobile first vs desktop first.
+- Mobile first implies you will design and code for a mobile device first, and expand layout or features as you gain more screen space toward desktop. mobile first usually means your general styles are pointed at the phone and you utilize min-width media queries to layer on more complexity as you grow toward desktop views.
+-Desktop first we create the site from max-width and gradually reduced screens size
 
-3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+3. What does font-size: 62.5% in the html tag do for us when using rem units?
+- 62.5% as the base value because then you can convert rem units by the power of 10 instead of 16. 62.5 * .16 = 10. That means 1rem would equate to 10px throughout the document! This makes using rem so much easier to calculate compared to em.
 
 4. How would you describe preprocessing to someone new to CSS?
+- Preprocessing is simply a more robust syntax for CSS written in a different language. That language is then compiled into normal CSS. 
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+I love variable and parametric mixins, it helps me so much with reusable code, no repeating myself.
+
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
