@@ -207,6 +207,17 @@ p {
   font-size: 1.5em;
   color: black;
 }
+@media (max-width:500px) {
+  .nav .logo h1 {
+    font-size: 3rem;
+  }
+  .nav .anchors {
+    width: 100%;
+  }
+  .nav .anchors a {
+    font-size: 1.2em;
+  }
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -278,4 +289,58 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 5px;
+}
+@media (max-width:500px) {
+  .main-header {
+    width: 100%;
+    border-radius: 1px;
+  }
+  .home h1 {
+    font-size: 2.5rem;
+  }
+  .home p {
+    font-size: 1.2rem;
+  }
+  .home h2 {
+    font-size: 2rem;
+  }
+  .home .space-images {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .home .space-images .sky,
+  .home .space-images .launch {
+    display: none;
+  }
+  .home .space-images .blast {
+    flex-grow: 1;
+    width: 80vw;
+    margin: 2vh auto;
+    border-radius: 10px;
+  }
+  .home .walk {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+  }
+  .home .walk .walk-img {
+    flex-grow: 1;
+    width: 80vw;
+    margin: 2vh auto;
+    border-radius: 10px;
+  }
+  .home .walk .walk-text {
+    width: 100%;
+  }
+  .home .walk .walk-text .btn button {
+    background: black;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    width: 90%;
+    height: 7vh;
+  }
 }

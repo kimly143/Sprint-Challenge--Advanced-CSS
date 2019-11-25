@@ -78,4 +78,56 @@
       }
     }
   }
-}// home
+}
+@media @phone{
+    .main-header{
+      width: 100%;
+      border-radius: 1px;
+    }    
+    .home{
+      h1{font-size: 2.5rem;}
+      p{font-size: 1.2rem; }
+      h2{font-size: 2rem;}
+    
+      .space-images{
+        .flexColWrap();
+        .sky, .launch{
+          display: none;
+        }
+        .blast{ 
+          flex-grow: 1;
+          width: 80vw;
+          margin: 2vh auto;
+          .borderRadius(10px);
+      }
+      }
+    .walk{
+      width: 100%;
+      padding: 10px;
+      display: flex;
+      flex-direction: column-reverse;
+      flex-wrap: wrap;
+      .walk-img{ 
+        flex-grow: 1;
+        width: 80vw;
+        margin: 2vh auto;
+        .borderRadius(10px);
+      }
+      .walk-text{
+        width: 100%;
+        .btn {
+          button {
+            .buttonStyle(black, white, 5px);
+          font-size: 1.5rem;
+          width: 90%;
+          height: 7vh;
+          }//button
+        }//btn
+      }
+      
+    }//walk
+    
+    }//home phone
+  }
+    
+  
