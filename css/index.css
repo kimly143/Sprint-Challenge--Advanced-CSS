@@ -290,6 +290,19 @@ footer {
   height: auto;
   border-radius: 5px;
 }
+.animation {
+  width: 100%;
+  height: 4vh;
+  animation: pulse 5s infinite;
+}
+@keyframes pulse {
+  0% {
+    background-color: #17334e;
+  }
+  100% {
+    background-color: #7193f3;
+  }
+}
 @media (max-width:500px) {
   .main-header {
     width: 100%;
