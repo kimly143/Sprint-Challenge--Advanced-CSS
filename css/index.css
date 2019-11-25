@@ -1,3 +1,16 @@
+.flexRowNowrap {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.flexRowWrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flexColWrap {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -160,23 +173,6 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-.flexRowNowrap {
-  display: flex;
-  flex-wrap: nowrap;
-}
-.flexRowWrap {
-  display: flex;
-  flex-wrap: wrap;
-}
-.funFont {
-  color: black;
-  font-family: 'Indie Flower', cursive;
-}
-.flexColWrap {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
 .external {
   width: 100vw;
   background: #F6F6F6;
@@ -269,10 +265,10 @@ footer {
 .home .walk .walk-text .btn button {
   background: black;
   color: white;
+  border-radius: 5px;
   font-size: 1.5rem;
   height: 4.5vh;
   width: 8vw;
-  border-radius: 5px;
 }
 .home .walk .walk-img {
   width: 46%;
@@ -281,5 +277,5 @@ footer {
 .home .walk .walk-img img {
   width: 100%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 5px;
 }
