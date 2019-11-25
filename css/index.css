@@ -281,6 +281,12 @@ footer {
   height: 4.5vh;
   width: 8vw;
 }
+.home .walk .walk-text .btn button:hover {
+  background: white;
+  color: black;
+  border-radius: 5px;
+  border: 1px solid dodgerblue;
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
