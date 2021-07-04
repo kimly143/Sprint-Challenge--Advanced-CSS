@@ -1,1 +1,22 @@
 // Mixins Here
+.flexRowNowrap{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.flexRowWrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+.flexColWrap{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.borderRadius(@radius) {
+    border-radius: @radius;
+}
+.buttonStyle(@background, @fontColor, @radius){
+    background: @background;
+    color: @fontColor;
+    .borderRadius(@radius);
+}

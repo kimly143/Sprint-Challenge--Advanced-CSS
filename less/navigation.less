@@ -1,1 +1,48 @@
 // Navigation code here
+
+.external{
+    width: 100vw;
+    background: @navBG;
+}
+.nav{
+    .flexRowWrap();
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto 0 auto;
+    padding: 15px 15px;
+    .logo{
+        padding: 0 0 2vh 0;
+        width: 100%;
+        text-align: center;
+    }
+    .logo h1{
+        font-size: 4rem;
+    }
+
+    .anchors{
+        .flexRowNowrap();
+        justify-content: center;
+        width: 60%;
+            a {
+            flex-grow: 1;
+            text-decoration: none;
+            font-size: 1.5em;
+            color: black;
+            }
+        }
+    }
+@media @phone{
+    .nav{
+        .logo h1{
+            font-size: 3rem;
+        }
+        .anchors{
+            width: 100%;
+                a {
+                font-size: 1.2em;
+            }
+        }
+    }
+}
